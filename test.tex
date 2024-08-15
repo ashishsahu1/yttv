@@ -1,0 +1,185 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{latexsym}
+\usepackage{marvosym}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[empty]{fullpage}
+\usepackage{verbatim}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage{xcolor}
+
+% Set color
+\definecolor{myblue}{HTML}{0077AA}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margin
+\addtolength{\oddsidemargin}{-0.25in}
+\addtolength{\evensidemargin}{-0.25in}
+\addtolength{\textwidth}{0.5in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\color{myblue}
+}{}{0em}{}[\titlerule\vspace{-5pt}]
+\titleformat{\subsection}{
+  \vspace{-4pt}\bfseries\raggedright\large
+}{}{0em}{}
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item\small{
+        \textbf{#1}\vspace{-2pt}\\#2
+    }
+}
+
+\newcommand{\resumeSubSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\newcommand{\resumeHeading}[1]{
+    \vspace{-3pt}\textbf{#1}\vspace{-2pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-12pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-12pt}}
+
+\begin{document}
+
+% Name and contact info
+\begin{center}
+    {\Huge \scshape John Doe} \\ \vspace{1pt}
+    \small \href{mailto:johndoe@example.com}{\faEnvelope \ \ johndoe@example.com} \ $|$ \
+    \href{https://linkedin.com/in/johndoe}{\faLinkedin \ \ linkedin.com/in/johndoe} \ $|$ \
+    \faPhone \ +123-456-7890
+\end{center}
+
+% Education
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Somewhere}{Somewhere, Country}
+      {Bachelor of Science in Computer Science; GPA: 3.8/4.0}{Aug. 2020 -- May 2024}
+  \resumeSubHeadingListEnd
+
+% Experience
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Somewhere Tech Corp}{Somewhere, Country}
+      {Software Engineer Intern}{Jun. 2023 -- Aug. 2023}
+      \resumeItemListStart
+        \resumeItem{Developed a web application}
+          {Built a web-based application using React and Node.js, improving processing speed by 30\%.}
+        \resumeItem{Collaborated with cross-functional teams}
+          {Worked with designers and product managers to implement new features, resulting in a 15\% user engagement increase.}
+      \resumeItemListEnd
+    \vspace{20pt}
+      \resumeSubheading
+      {Somewhere Tech Corp}{Somewhere, Country}
+      {Software Engineer Intern}{Jun. 2023 -- Aug. 2023}
+      \resumeItemListStart
+        \resumeItem{Developed a web application}
+          {Built a web-based application using React and Node.js, improving processing speed by 30\%.}
+        \resumeItem{Collaborated with cross-functional teams}
+          {Worked with designers and product managers to implement new features, resulting in a 15\% user engagement increase.}
+      \resumeItemListEnd
+\vspace{20pt}
+      \resumeSubheading
+      {Somewhere Tech Corp}{Somewhere, Country}
+      {Software Engineer Intern}{Jun. 2023 -- Aug. 2023}
+      \resumeItemListStart
+        \resumeItem{Developed a web application}
+          {Built a web-based application using React and Node.js, improving processing speed by 30\%.}
+        \resumeItem{Collaborated with cross-functional teams}
+          {Worked with designers and product managers to implement new features, resulting in a 15\% user engagement increase.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% Projects
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Personal Portfolio Website}{}
+      {GitHub: \href{https://github.com/johndoe}{github.com/johndoe}}{Mar. 2023}
+      \resumeItemListStart
+        \resumeItem{Designed and Developed}
+          {Created a personal portfolio using HTML, CSS, and JavaScript to showcase projects and skills.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{20pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Personal Portfolio Website}{}
+      {GitHub: \href{https://github.com/johndoe}{github.com/johndoe}}{Mar. 2023}
+      \resumeItemListStart
+        \resumeItem{Designed and Developed}
+          {Created a personal portfolio using HTML, CSS, and JavaScript to showcase projects and skills.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{20pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Personal Portfolio Website}{}
+      {GitHub: \href{https://github.com/johndoe}{github.com/johndoe}}{Mar. 2023}
+      \resumeItemListStart
+        \resumeItem{Designed and Developed}
+          {Created a personal portfolio using HTML, CSS, and JavaScript to showcase projects and skills.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  \vspace{20pt}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Personal Portfolio Website}{}
+      {GitHub: \href{https://github.com/johndoe}{github.com/johndoe}}{Mar. 2023}
+      \resumeItemListStart
+        \resumeItem{Designed and Developed}
+          {Created a personal portfolio using HTML, CSS, and JavaScript to showcase projects and skills.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+% Skills
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeSubSubheading{}{Proficient in: Python, JavaScript, React, Node.js, Git, SQL}
+    \resumeSubSubheading{}{Proficient in: Python, JavaScript, React, Node.js, Git, SQL}
+    \resumeSubSubheading{}{Proficient in: Python, JavaScript, React, Node.js, Git, SQL}
+    \resumeSubSubheading{}{Proficient in: Python, JavaScript, React, Node.js, Git, SQL}
+  \resumeSubHeadingListEnd
+
+% Footer
+\begin{center}
+    \vspace{4pt}
+    \textit{References available upon request.}
+\end{center}
+
+\end{document}
